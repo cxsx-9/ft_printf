@@ -6,7 +6,7 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 00:08:05 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/11 16:22:25 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/11 22:39:21 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 int	ft_printf(const char *str, ...);
 int	ft_print_c(int c);
 int	ft_print_s(char *s);
-int	ft_print_p(unsigned long long p);
+int	ft_print_p(unsigned long p);
 int	ft_print_d(int n);
 int	ft_print_u(unsigned int n);
 int	ft_print_x(unsigned int n, char s);
