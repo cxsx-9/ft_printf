@@ -6,19 +6,19 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:55:38 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/10 18:38:51 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/12 22:54:58 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h> 
 
-static long long int	count(long int n, long int base)
+static long long int	count(unsigned long long int n, int base)
 {
 	int	i;
 
 	i = 0;
-	while (n >= base)
+	while (n >= (unsigned long long int)base)
 	{
 		n = n / base;
 		i++;
@@ -26,7 +26,7 @@ static long long int	count(long int n, long int base)
 	return (i);
 }
 
-static long long int	ft_convert_base(long long int n)
+static long long int	ft_convert_base(unsigned long long int n)
 {
 	if (n >= 10)
 		return (n - 10 + 'a');
@@ -34,7 +34,7 @@ static long long int	ft_convert_base(long long int n)
 		return (n + '0');
 }
 
-char	*ft_itoa_base(long long int value, long long int base)
+char	*ft_itoa_base(unsigned long long int value, int base)
 {
 	char				*str;
 	long long int		size;

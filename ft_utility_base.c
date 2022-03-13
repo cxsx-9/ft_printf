@@ -6,19 +6,19 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 12:55:44 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/11 22:39:44 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/12 22:50:09 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_p(unsigned long p)
+int	ft_print_p(void *p)
 {
 	int		size;
 	char	*str;
 
 	size = ft_print_s("0x");
-	str = ft_itoa_base(p, 16);
+	str = ft_itoa_base((unsigned long long int)p, 16);
 	size += ft_print_s(str);
 	free(str);
 	return (size);

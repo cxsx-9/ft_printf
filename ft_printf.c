@@ -6,7 +6,7 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 18:40:26 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/11 22:39:10 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/12 22:43:07 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	check(va_list args, const char str)
 	else if (str == 's')
 		return (ft_print_s(va_arg(args, char *)));
 	else if (str == 'p')
-		return (ft_print_p(va_arg(args, unsigned long)));
+		return (ft_print_p(va_arg(args, void *)));
 	else if (str == 'd' || str == 'i')
 		return (ft_print_d(va_arg(args, int)));
 	else if (str == 'u')

@@ -6,7 +6,7 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 14:23:42 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/12 12:22:59 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/13 02:08:09 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_print_s(char *s)
 	if (s == NULL)
 	{
 		ft_putstr_fd("(null)", 1);
-		return(6);
+		return (6);
 	}
 	ft_putstr_fd(s, 1);
 	return (ft_strlen(s));
