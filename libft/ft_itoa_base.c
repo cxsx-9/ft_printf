@@ -6,12 +6,11 @@
 /*   By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 15:55:38 by csantivi          #+#    #+#             */
-/*   Updated: 2022/03/12 22:54:58 by csantivi         ###   ########.fr       */
+/*   Updated: 2022/03/13 13:46:06 by csantivi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h> 
 
 static long long int	count(unsigned long long int n, int base)
 {
