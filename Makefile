@@ -6,7 +6,7 @@
 #    By: csantivi <csantivi@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/16 18:49:59 by csantivi          #+#    #+#              #
-#    Updated: 2022/03/11 14:24:15 by csantivi         ###   ########.fr        #
+#    Updated: 2022/03/15 10:11:01 by csantivi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,6 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	make fclean -C libft
 
 re: fclean all
 
